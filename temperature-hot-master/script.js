@@ -19,13 +19,13 @@ btn.addEventListener('click', ()=>{
     }).catch(error =>console.log("Worng"));
 })
 
-const showTime= document.getElementById('show-time');
+const showDate= document.getElementById('show-time');
 const currentTime=new Date();
 const options={
     weekday:'long',
     day:'numeric',
     month:'long'
 }
-const myTime=currentTime.toDateString(options);
+const myDate=currentTime.toDateString(options);
 
-showTime.innerHTML=myTime;
+showDate.innerHTML=myDate;
